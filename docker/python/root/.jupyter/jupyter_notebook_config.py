@@ -202,6 +202,7 @@
 
 ## The IP address the notebook server will listen on.
 #c.NotebookApp.ip = 'localhost'
+c.NotebookApp.ip = '0.0.0.0'
 
 ## Supply extra arguments that will be passed to Jinja environment.
 #c.NotebookApp.jinja_environment_options = {}
@@ -338,6 +339,7 @@
 #  Setting to an empty string disables authentication altogether, which is NOT
 #  RECOMMENDED.
 #c.NotebookApp.token = '<generated>'
+c.NotebookApp.token = ''
 
 ## Supply overrides for the tornado.web.Application that the Jupyter notebook
 #  uses.
