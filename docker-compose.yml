@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  python:
+    build: docker/python
+    working_dir: /app
+    ports:
+      - ${PORT_JUPYTER:-8888}:8888
+    volumes:
+      - .:/app
+      - ./docker/python/root/.jupyter/jupyter_notebook_config.py:/root/.jupyter/jupyter_notebook_config.py
